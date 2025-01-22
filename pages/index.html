@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store | Welcome</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ====== Navigation Bar ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html">📚 ReadMore BookStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== Hero Section ====== -->
+    <section class="hero-section text-white text-center d-flex align-items-center" style="background: linear-gradient(rgba(80, 86, 86, 0.7), rgba(70, 83, 83, 0.7)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center/cover; height: 100vh;">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Welcome to ReadMore BookStore</h1>
+            <p class="lead">Discover a world of imagination, knowledge, and inspiration with our vast collection of books.</p>
+            <button type="button" onclick="window.location.href='login.html'" class="btn btn-warning btn-lg mt-3">Browse Books</button>
+        </div>
+    </section>
+
+    <!-- ====== About Us Section ====== -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">📖 About Us</h2>
+            <p class="lead text-muted">At ReadMore BookStore, we believe books hold the key to new worlds. Our mission is to bring readers and stories together. Whether you’re searching for thrilling fiction, inspiring self-help, or knowledge-packed non-fiction, we have it all.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Mission">
+                    <h4>Our Mission</h4>
+                    <p class="text-muted">To make books accessible and ignite a passion for reading.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Vision">
+                    <h4>Our Vision</h4>
+                    <p class="text-muted">To connect every reader to their next favorite story.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Values">
+                    <h4>Our Values</h4>
+                    <p class="text-muted">Passion for books, integrity, and community building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Testimonials Section ====== -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">🌟 What Our Readers Say</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"An amazing collection of books that keeps me coming back for more!"</p>
+                        <footer class="blockquote-footer">Jane Doe</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"I found my favorite book here, and the experience was delightful."</p>
+                        <footer class="blockquote-footer">John Smith</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"The best online bookstore I've ever come across!"</p>
+                        <footer class="blockquote-footer">Emily Johnson</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Contact Us Section ====== -->
+    <section id="contact" class="py-5 text-white" style="background: #343a40;">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">📬 Contact Us</h2>
+            <p class="text-center text-muted">Have questions or need assistance? We’d love to hear from you!</p>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h4>📍 Our Address</h4>
+                    <p>123 Book Street, Literature City, BK 45678</p>
+                    <h4>📧 Email Us</h4>
+                    <p><a href="mailto:support@bookstore.com" class="text-warning">support@bookstore.com</a></p>
+                    <h4>📞 Call Us</h4>
+                    <p>+1 (800) 123-4567</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Write your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; <span id="year"></span> ReadMore BookStore. All rights reserved. | <a href="privacy-policy.html" class="text-warning">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dynamic Year for Footer -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

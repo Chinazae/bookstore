@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+/* ====== Hero Section ====== */
+.hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto;
+    animation: slideInFromTop 2s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d1d1d1;
+}
+
+.hero-text button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text button:hover {
+    background-color: #e65c50;
+    transform: scale(1.05);
+}
+
+/* ====== Featured Books Section ====== */
+.featured-books {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+.featured-books h2 {
+    color: #ff6f61;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.featured-books img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-books img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.featured-books .book-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.featured-books .book-title:hover {
+    color: #ff6f61;
+}
+
+/* ====== Testimonials Section ====== */
+.testimonials {
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonials h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 3rem;
+    color: #ff6f61;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+
+blockquote::after {
+    content: "”";
+    font-size: 3rem;
+    color: #ff6f61;
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+}
+
+/* ====== Footer ====== */
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ff6f61;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* ====== Button Styling ====== */
+.btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e65c50;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Animations ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
